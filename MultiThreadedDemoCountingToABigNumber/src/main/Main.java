@@ -61,7 +61,7 @@ public class Main {
 		// Launch all the threads to run in parallel
 		startTime = System.currentTimeMillis();
 		for (int i = 0; i < numberOfCores; i++) {
-			countingThreads.get(i).run();
+			countingThreads.get(i).start();
 		}
 
 		// Wait for all the threads to finish
